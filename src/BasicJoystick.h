@@ -63,7 +63,7 @@ class BasicJoystick_
 public:
     BasicJoystick_();
 
-    void setState(JoyState_t *joySt);
+    void setState(const JoyState_t & joySt);
 };
 
 extern BasicJoystick_ BasicJoystick;

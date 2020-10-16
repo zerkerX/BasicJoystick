@@ -67,9 +67,9 @@ BasicJoystick_::BasicJoystick_()
 }
 
 
-void BasicJoystick_::setState(JoyState_t *joySt)
+void BasicJoystick_::setState(const JoyState_t & joySt)
 {
-    HID().SendReport(3, joySt->data, sizeof(JoyState_t));
+    HID().SendReport(3, joySt.data, sizeof(JoyState_t));
     // The joystick is specified as using report 3 in the descriptor. That's where the "3" comes from
 }
 

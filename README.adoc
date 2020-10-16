@@ -9,11 +9,11 @@ but rather only enough for a simple arcade stick or basic gamepad. It also
 has a minimal code interface, which requires a little bit more C knowledge
 than the average Arduino library.
 
-To use it, include BasicJoystick.h in your sketch, then declare
-a global or static instance of type JoyState_t. In the loop method,
+To use it, include *BasicJoystick.h* in your sketch, then declare
+a global or static instance of type *JoyState_t*. In the loop method,
 update each of the members of this variable to their desired values
 (e.g. axis value, button pressed, etc.), then pass the address of your
-JoyState_t variable to setState()
+*JoyState_t* variable to *setState()*.
 
 The following is a simple example using only two buttons:
 

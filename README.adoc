@@ -18,10 +18,7 @@ to the USB host.
 
 Refer to the included **TwoButtonDigitalPad** example for more details.
 
-The default variant of this library supports 10 buttons, using SNES-style
-terminology. At least one other variant is maintained in a different
-branch in this repository. Refer to BasicJoystick.h for the full set of 
-supported button fields for the branch in use.
+This variant of the library supports only two buttons, as button_1 and button_2.
 
 == License ==
 

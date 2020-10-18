@@ -39,22 +39,11 @@ typedef union JoyState
     {
         uint8_t     xAxis;
         uint8_t     yAxis;
-
-        // Buttons use SNES terminology with placeholders for PS-style L2/R2
-        // Button order matches most Logitech pads
-        uint16_t   button_Y: 1;
-        uint16_t   button_B: 1;
-        uint16_t   button_A: 1;
-        uint16_t   button_X: 1;
-        uint16_t   button_L: 1;
-        uint16_t   button_R: 1;
-        uint16_t   button_L2: 1;
-        uint16_t   button_R2: 1;
-        uint16_t   button_Select: 1;
-        uint16_t   button_Start: 1;
+        uint16_t   button_1: 1;
+        uint16_t   button_2: 1;
     };
     
-    uint8_t data[4];
+    uint8_t data[3];
 
 } JoyState_t;
 

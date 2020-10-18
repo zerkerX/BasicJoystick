@@ -16,8 +16,8 @@ void setup() {
     pinMode(DPAD_RIGHT, INPUT_PULLUP);
     pinMode(DPAD_DOWN, INPUT_PULLUP);
 
-    pinMode(BUTTON_Y, INPUT_PULLUP);
-    pinMode(BUTTON_B, INPUT_PULLUP);
+    pinMode(BUTTON_1, INPUT_PULLUP);
+    pinMode(BUTTON_2, INPUT_PULLUP);
 }
 
 // Create joystick state structure for HID status reporting
@@ -28,8 +28,8 @@ void loop() {
     // Note that most buttons are active low (pressed = signal grounded)
     // so they require inversion.
     
-    state.button_Y = !digitalRead(BUTTON_Y);
-    state.button_B = !digitalRead(BUTTON_B);
+    state.button_1 = !digitalRead(BUTTON_1);
+    state.button_2 = !digitalRead(BUTTON_2);
 
     // Convert the digital joystick position into analog X/Y axis
     if (!digitalRead(DPAD_LEFT))
